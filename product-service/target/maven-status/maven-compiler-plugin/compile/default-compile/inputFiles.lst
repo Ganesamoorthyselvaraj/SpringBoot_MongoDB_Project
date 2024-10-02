@@ -1,0 +1,5 @@
+/root/SpringBoot-with-MongoDB/product-service/src/main/java/com/example/productservice/controller/ProductController.java
+/root/SpringBoot-with-MongoDB/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java
+/root/SpringBoot-with-MongoDB/product-service/src/main/java/com/example/productservice/controller/ProductViewController.java
+/root/SpringBoot-with-MongoDB/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java
+/root/SpringBoot-with-MongoDB/product-service/src/main/java/com/example/productservice/model/Product.java
