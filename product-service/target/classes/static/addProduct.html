@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add Product</title>
+    <title>Add Project Details</title>
 </head>
 <body>
     <h1>Add Product</h1>
@@ -12,7 +12,7 @@
         <label for="price">Price:</label>
         <input type="number" id="price" name="price" required>
         
-        <button type="submit">Add Product</button>
+        <button type="submit">Update</button>
     </form>
 
     <script>
@@ -27,9 +27,9 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    alert('Product added successfully!');
+                    alert('Project Details has been updated successfully!');
                 } else {
-                    alert('Error adding product.');
+                    alert('Error adding Project Details');
                 }
             });
         };
