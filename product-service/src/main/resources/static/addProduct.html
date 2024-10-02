@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add Project</title>
+    <title>Add Product</title>
 </head>
 <body>
-    <h1>Add Project</h1>
-    <form id="projectForm">
-        <label for="name">Project Name:</label>
+    <h1>Add Product</h1>
+    <form id="productForm">
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
         
-        <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" name="startDate" required>
-        
-        <label for="endDate">End Date:</label>
-        <input type="date" id="endDate" name="endDate" required>
-        
-        <button type="submit">Add Project</button>
+        <button type="submit">Add Product</button>
     </form>
 
     <script>
-        document.getElementById("projectForm").onsubmit = function(event) {
+        document.getElementById("productForm").onsubmit = function(event) {
             event.preventDefault();
             const formData = new FormData(this);
-            fetch('/projects', {
+            fetch('/products', {
                 method: 'POST',
-                body: JSON.stringify(Object.fromEntries(formData.entries())),
+                body: JSON.stringify(Object.fromEntries(formData.entries())), // Corrected here
                 headers: {
                     'Content-Type': 'application/json'
                 }
             }).then(response => {
                 if (response.ok) {
-                    alert('Project added successfully!');
+                    alert('Product added successfully!');
                 } else {
-                    alert('Error adding project.');
+                    alert('Error adding product.');
                 }
             });
         };
