@@ -16,11 +16,15 @@ pipeline {
             }
         }
         stage('Docker Build') {
-            steps {
-                sh 'docker compose build'
-                sh 'docker images'
-            }
+    steps {
+        script {
+            // Ensure you are in the correct directory where docker-compose.yaml is located
+            sh 'docker-compose -f path/to/docker-compose.yaml build'
+            sh 'docker images'
         }
+    }
+}
+
         stage('Docker Deploy') {
             steps {
                 sh 'docker compose up -d'
