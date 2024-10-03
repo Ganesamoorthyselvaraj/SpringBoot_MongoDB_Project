@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: user-service
-        image: ramann123/user-service:latest  # Replace with your Docker Hub image path
+        image: sganesamoorthy/customer-service:latest # Replace with your Docker Hub image path
         imagePullPolicy: Always
         ports:
         - containerPort: 8081
