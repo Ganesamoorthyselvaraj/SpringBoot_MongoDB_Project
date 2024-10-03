@@ -22,7 +22,7 @@ spec:
         - name: SPRING_PROFILES_ACTIVE
           value: docker
         - name: SPRING_DATA_MONGODB_URI
-          value: mongodb://mongo:27017/customerdb
+          value: mongodb://mongo:27017/userdb
 ---
 apiVersion: v1
 kind: Service
