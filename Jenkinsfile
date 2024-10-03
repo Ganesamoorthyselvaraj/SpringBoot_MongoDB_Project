@@ -8,9 +8,9 @@ pipeline {
                 }
             }
         }
-        stage('Build Customer service ') {
+        stage('Build Customer service') {
             steps {
-                dir('customer-service ') {
+                dir('customer-service') {
                     sh 'mvn clean package'
                 }
             }
