@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('Build Product Service') {
             steps {
-                dir('product-service') {
+                dir('project-service') {
                     sh 'mvn clean package'
                 }
             }
         }
-        stage('Build User Service') {
+        stage('Build Customer service ') {
             steps {
-                dir('user-service') {
+                dir('customer-service ') {
                     sh 'mvn clean package'
                 }
             }
