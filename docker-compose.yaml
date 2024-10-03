@@ -23,12 +23,12 @@ services:
       SPRING_PROFILES_ACTIVE: docker
       SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/customerdb
 
-#  mongo:
-#   image: mongo:latest
-#   ports:
-#     - "27017:27017"
-#   volumes:
-#     - mongo-data:/data/db
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
 
 #volumes:
 # mongo-data:
