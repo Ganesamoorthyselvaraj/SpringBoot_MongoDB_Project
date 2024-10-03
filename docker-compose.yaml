@@ -3,7 +3,7 @@ version: '3.8'
 services:
   product-service:
     build:
-      context: ./product-service
+      context: ./project-service
       dockerfile: Dockerfile
     image: sganesamoorthy/project-service:latest  # Specify your Docker Hub username here
     ports:
@@ -14,7 +14,7 @@ services:
 
   user-service:
     build:
-      context: ./user-service
+      context: ./customer-service
       dockerfile: Dockerfile
     image: sganesamoorthy/customer-service:latest  # Specify your Docker Hub username here
     ports:
