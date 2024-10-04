@@ -22,6 +22,10 @@ pipeline {
                         sh 'docker images'
                     }
                 }
-        
+        stage('Docker Push') {
+            steps {
+                sh 'docker compose push'
+            }
+        }
     }
 }
