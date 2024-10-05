@@ -5,7 +5,7 @@ services:
     build:
       context: ./project-service
       dockerfile: Dockerfile
-    image: sganesamoorthy/project-service:latest  # Specify your Docker Hub username here
+    image: sganesamoorthy/project-service:v1  # Specify your Docker Hub username here
     ports:
       - "8082:8082"
     environment:
@@ -16,7 +16,7 @@ services:
     build:
       context: ./customer-service
       dockerfile: Dockerfile
-    image: sganesamoorthy/customer-service:latest  # Specify your Docker Hub username here
+    image: sganesamoorthy/customer-service:v1  # Specify your Docker Hub username here
     ports:
       - "8081:8081"
     environment:
